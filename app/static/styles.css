@@ -1,25 +1,77 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset */
+* {
     margin: 0;
-    padding: 2rem;
-    background: #f9f9f9;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #6dd5ed, #2193b0);
     color: #333;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-header {
+/* Container */
+.container {
+    background: #fff;
+    padding: 2rem 3rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    max-width: 450px;
+    width: 100%;
     text-align: center;
-    margin-bottom: 2rem;
 }
 
-.btn {
-    display: inline-block;
-    padding: 0.6rem 1.2rem;
-    background: #007BFF;
+/* Header */
+.container h1 {
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    color: #222;
+}
+
+/* Form groups */
+.form-group {
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #ddd;
+    border-radius: 0.75rem;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: #2193b0;
+}
+
+/* Button */
+button {
+    background: #2193b0;
     color: #fff;
-    border-radius: 8px;
-    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.75rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 100%;
 }
 
-.btn:hover {
-    background: #0056b3;
+button:hover {
+    background: #17617a;
 }
